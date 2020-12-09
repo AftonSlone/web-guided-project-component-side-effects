@@ -25,8 +25,9 @@ export default function Details(props) {
     };
     document.addEventListener("click", sillyCLickListener);
     return () => {
-      console.log('')
-    }
+      console.log("👻 Cleaning up silly click listener");
+      document.removeEventListener("click", sillyCLickListener);
+    };
   }, []);
 
   // 👉 TASK 6 - Create a side effect 🥵 that runs after every render.
