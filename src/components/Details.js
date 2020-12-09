@@ -7,7 +7,9 @@ export default function Details(props) {
   const [details, setDetails] = useState(null)
 
   // 👉 TASK 4 - Create a side effect 🥇 that runs only after first render.
-  useEffect( () => {}, [] );
+  useEffect(() => {
+    console.log(🥇 EFFECT after first Render + DOM surgery);
+  }, []);
 
 
   // 👉 TASK 5 - Create a side effect 👻 that runs only after first render
