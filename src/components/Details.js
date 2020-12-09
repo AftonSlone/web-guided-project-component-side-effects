@@ -20,7 +20,9 @@ export default function Details(props) {
   // See what happens if we don't clean up.
 
   useEffect(() => {
-    
+    const sillyCLickListener = (evt) => {
+      console.log(`here's a random number: ${}`)
+    }
   }, [])
 
   // 👉 TASK 6 - Create a side effect 🥵 that runs after every render.
