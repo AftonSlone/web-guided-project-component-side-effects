@@ -9,7 +9,10 @@ export default function Details(props) {
   // 👉 TASK 4 - Create a side effect 🥇 that runs only after first render.
   useEffect(() => {
     console.log("🥇 EFFECT after first Render + DOM surgery");
-    return () => console.log("🥇 ")
+    return () =>
+      console.log(
+        "🥇 CLEANUP of effect from first DOM surgery right before unmount"
+      );
   }, []);
 
   // 👉 TASK 5 - Create a side effect 👻 that runs only after first render
