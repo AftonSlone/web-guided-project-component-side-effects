@@ -45,7 +45,9 @@ export default function Details(props) {
   // On success, shove the details of the friend in `details` slice of state
 
   useEffect(() => {
-  // this runs after the first render for sure, and then after
+  // this runs after the first render for sure, and then after every render+DOM surgery
+  // caused by a change in the friendID
+    console.log('📲 fetching friend with id ${')
   }, [])
 
   return (
