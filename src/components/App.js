@@ -11,6 +11,9 @@ export default function App() {
   const [friends, setFriends] = useState([]);
   const [currentFriendId, setCurrentFriendId] = useState(null);
 
+  useEffect(() => {})
+
+
   const openDetails = (id) => {
     setCurrentFriendId(id);
   };
