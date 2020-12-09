@@ -59,7 +59,7 @@ export default function Details(props) {
     return () => {
       console.log(`📲 old friendId was ${friendId}. This is cleanup`);
     };
-  }, []);
+  }, [friendId]);
 
   return (
     <div className="container">
