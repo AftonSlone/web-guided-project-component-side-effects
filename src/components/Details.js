@@ -24,6 +24,9 @@ export default function Details(props) {
       console.log(`here's a random number: ${Math.random()}`);
     };
     document.addEventListener("click", sillyCLickListener);
+    return () => {
+      console.log('')
+    }
   }, []);
 
   // 👉 TASK 6 - Create a side effect 🥵 that runs after every render.
