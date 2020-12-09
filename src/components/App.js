@@ -27,7 +27,8 @@ export default function App() {
     axios
       .get(`${BASE_URL}/friends?api_key=${API_KEY}`)
       .then((res) => {
-        setFriends(res.data);
+        debugger;
+        // setFriends(res.data);
       })
       .catch((err) => {
         debugger;
