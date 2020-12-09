@@ -24,7 +24,7 @@ export default function App() {
   // The effect should consist of a call to the API using axios.
   // On success, set the array of friend objects from the API into state.
   useEffect(() => {
-    
+    axios.get()
   }, []);
 
   const Friend = (props) => (
