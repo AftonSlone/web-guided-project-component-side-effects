@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 // 👉 TASK 2 - import the contants from constants/index.js
+import { BASE_URL, API_KEY } from "./constants/index";
 
 import Details from "./Details";
 
