@@ -34,7 +34,7 @@ export default function App() {
       });
   }, []);
 
-  useEffect()
+  useEffect(() => {}, [])
 
   const Friend = (props) => (
     <div className="friend">
