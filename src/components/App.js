@@ -34,6 +34,8 @@ export default function App() {
           console.log(err);
         });
     };
+
+    fetchFriends();
   }, []);
 
   const Friend = (props) => (
