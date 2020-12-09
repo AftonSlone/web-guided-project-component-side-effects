@@ -55,10 +55,10 @@ export default function Details(props) {
       })
       .catch((err) => {
         debugger;
-      })
-      return () => {
-        console.log(``)
-      }
+      });
+    return () => {
+      console.log(`📲 old friendId was ${friendId}. This is cleanup`);
+    };
   }, []);
 
   return (
