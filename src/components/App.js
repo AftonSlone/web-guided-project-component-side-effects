@@ -30,13 +30,9 @@ export default function App() {
         setFriends(res.data);
       })
       .catch((err) => {
-        debugger;
+        console.log(err);
       });
   }, []);
-
-  useEffect(() => {
-    console.log()
-  }, [])
 
   const Friend = (props) => (
     <div className="friend">
