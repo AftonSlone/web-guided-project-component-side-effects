@@ -45,10 +45,12 @@ export default function Details(props) {
   // On success, shove the details of the friend in `details` slice of state
 
   useEffect(() => {
-  // this runs after the first render for sure, and then after every render+DOM surgery
-  // caused by a change in the friendID
-    console.log('📲 fetching friend with id ${')
-  }, [])
+    // this runs after the first render for sure, and then after every render+DOM surgery
+    // caused by a change in the friendID
+    console.log(`📲 fetching friend with id ${friendId}`)
+    axios.get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
+    .then(res =>)
+  }, []);
 
   return (
     <div className="container">
