@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // 👉 TASK 1 - import the axios lib from node_modules
 import axios from "axios";
 
 // 👉 TASK 2 - import the contants from constants/index.js
-import { BASE_URL, API_KEY } from "./constants/index";
+import { BASE_URL, API_KEY } from "../constants/index";
 
 import Details from "./Details";
 
