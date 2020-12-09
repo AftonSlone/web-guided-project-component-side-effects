@@ -35,8 +35,8 @@ export default function Details(props) {
   useEffect(() => {
     console.log("🥵 EFFECT after every DOM surgery");
     return () => {
-      console.log()
-    }
+      console.log("CLEANUP of previous effect");
+    };
   });
 
   // 👉 TASK 7 - Create a side effect 📲 that runs when a particular variable changes:
